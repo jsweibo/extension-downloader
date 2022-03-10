@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#179b16" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/result.css" />
+    <script defer src="js/clipboard.min.js"></script>
+    <script defer src="js/rem.js"></script>
+    <script defer src="js/result.js"></script>
+    <title>Extension Downloader</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="hint-field">
+        <div class="mask"></div>
+        <div class="hint hint_success">Copied</div>
+      </div>
+      <div id="outputField">
+        <div class="form-field">
+          <div class="title">Download URL</div>
+          <div class="value-field input-field">
+            <input type="text" readonly />
+          </div>
+        </div>
+        <div class="btns-field">
+          <button type="button" id="copy">Copy</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

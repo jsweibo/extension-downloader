@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#root {
+  font-size: 0;
+  max-width: 3.75rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.form-field {
+  border: 0.01rem solid #ccc;
+  margin-bottom: 0.15rem;
+  padding: 0.06rem;
+}
+
+.form-field .title {
+  font-weight: bold;
+}
+
+.value-field {
+  margin-top: 0.06rem;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+}
+
+.input-field input {
+  flex: 1;
+  height: 0.46rem;
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
+  box-sizing: border-box;
+  border: 0.01rem solid #ccc;
+  font-size: 0.16rem;
+}
+
+.btns-field button {
+  text-align: center;
+  padding: 0;
+  line-height: 0.5rem;
+  border: 0.01rem solid #179b16;
+  display: block;
+  width: 100%;
+  font-size: 0.16rem;
+  cursor: pointer;
+}
+
+.btns-field button:first-child {
+  background-color: #179b16;
+  color: #fff;
+}

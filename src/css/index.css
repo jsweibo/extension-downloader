@@ -1,0 +1,22 @@
+form {
+  padding: 0.15rem;
+  font-size: 0.16rem;
+}
+
+.select-field select {
+  width: 100%;
+  height: 0.46rem;
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
+  box-sizing: border-box;
+  border: 0.01rem solid #ccc;
+  font-size: 0.16rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btns-field button:last-child {
+  color: #179b16;
+  margin-top: 0.15rem;
+  background-color: #fff;
+}

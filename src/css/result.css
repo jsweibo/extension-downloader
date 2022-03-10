@@ -1,0 +1,41 @@
+#outputField {
+  padding: 0.15rem;
+  font-size: 0.16rem;
+}
+
+.hint-field {
+  display: none;
+}
+
+.hint-field_visible {
+  display: block;
+}
+
+.mask {
+  width: 100%;
+  max-width: 3.75rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.hint {
+  font-size: 0.16rem;
+  padding: 0.15rem;
+  width: fit-content;
+  max-width: 2rem;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hint_success {
+  background-color: #fff;
+  border: 0.01rem solid #179b16;
+  color: #179b16;
+}

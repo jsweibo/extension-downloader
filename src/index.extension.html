@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#179b16" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/rem.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>Extension Downloader</title>
+  </head>
+  <body>
+    <div id="root">
+      <form autocomplete="off">
+        <div class="form-field">
+          <div class="title">Store</div>
+          <div class="value-field select-field">
+            <select name="store" id="store">
+              <option value="0">
+                https://chrome.google.com/webstore/category/extensions
+              </option>
+              <option value="1">
+                https://microsoftedge.microsoft.com/addons
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <div class="title">ID</div>
+          <div class="value-field input-field">
+            <input
+              type="text"
+              name="id"
+              id="id"
+              required
+              minlength="32"
+              maxlength="32"
+              pattern="[a-z]{32}"
+              placeholder="/[a-z]{32}/"
+            />
+          </div>
+        </div>
+        <div class="btns-field">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

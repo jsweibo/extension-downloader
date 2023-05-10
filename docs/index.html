@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="theme-color" content="#07c160" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/rem.js"></script>
+    <script defer src="js/root.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>Extension Downloader</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <form>
+          <div class="form-field">
+            <div class="title">Extension Store</div>
+            <div class="value-field select-field">
+              <select name="extensionStore" id="extensionStore">
+                <option value="0">Chrome</option>
+                <option value="1">Edg</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="title">Extension ID</div>
+            <div class="value-field input-field">
+              <input
+                type="text"
+                name="extensionId"
+                id="extensionId"
+                required
+                minlength="32"
+                maxlength="32"
+                pattern="[a-z]{32}"
+                placeholder="/[a-z]{32}/"
+              />
+            </div>
+          </div>
+          <div class="btns-field">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

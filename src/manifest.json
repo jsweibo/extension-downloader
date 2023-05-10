@@ -1,0 +1,17 @@
+{
+  "start_url": "index.html",
+  "name": "Extension Downloader",
+  "short_name": "Extension Downloader",
+  "description": "It can generate the download url of browser extensions",
+  "display": "fullscreen",
+  "theme_color": "#07c160",
+  "background_color": "#07c160",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

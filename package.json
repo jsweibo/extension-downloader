@@ -1,0 +1,42 @@
+{
+  "name": "extension-downloader",
+  "version": "1.0.0",
+  "description": "It can generate the download url of browser extensions",
+  "private": true,
+  "scripts": {
+    "build": "gulp",
+    "build.gh-pages": "gulp buildForPages",
+    "build.extension": "gulp buildForExtension",
+    "lint": "eslint src",
+    "prettier": "prettier --write src",
+    "test": "npm run build && node live-server.test.js",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jsweibo/extension-downloader.git"
+  },
+  "keywords": [
+    "extension-downloader"
+  ],
+  "author": "jsweibo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsweibo/extension-downloader/issues"
+  },
+  "homepage": "https://github.com/jsweibo/extension-downloader#readme",
+  "dependencies": {
+    "clipboard": "^2.0.11"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "delete": "^1.1.0",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.8"
+  }
+}

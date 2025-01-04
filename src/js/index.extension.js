@@ -6,13 +6,21 @@ document.querySelector('form').addEventListener('submit', function (event) {
 
   const extensionStore = extensionStoreSelect.value;
   const extensionId = extensionIdInput.value;
+
   let downloadURL = '';
   switch (extensionStore) {
-    case '0':
-      downloadURL = `https://clients2.google.com/service/update2/crx?response=redirect&prodversion=94.0.4606.61&acceptformat=crx3&x=id%3D${extensionId}%26installsource%3Dondemand%26uc`;
+    case '0': {
+      const {
+        groups: { version: chromeVersion },
+      } = /Chrome\/(?<version>\S+)/.exec(navigator.userAgent);
+      downloadURL = `https://clients2.google.com/service/update2/crx?response=redirect&prodversion=${chromeVersion}&acceptformat=crx3&x=id%3D${extensionId}%26installsource%3Dondemand%26uc`;
       break;
+    }
+
     case '1':
-      downloadURL = `https://edge.microsoft.com/extensionwebstorebase/v1/crx?response=redirect&x=id%3D${extensionId}%26installsource%3Dondemand%26uc`;
+      {
+        downloadURL = `https://edge.microsoft.com/extensionwebstorebase/v1/crx?response=redirect&x=id%3D${extensionId}%26installsource%3Dondemand%26uc`;
+      }
       break;
   }
   sessionStorage.setItem('downloadURL', downloadURL);
